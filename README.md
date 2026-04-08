@@ -1,16 +1,18 @@
 # Finextract
 
-`Finextract` currently ships as a packaged Windows installer rather than source code.
+A packaged desktop delivery repo for FinExtract Pro, aimed at people who want the installer fast without wading through a source tree.
 
-## Overview
+## What This Repo Contains
 
-This repository is intended as a distribution point for the installer build of the application.
+This repository currently distributes the Windows installer build of the application rather than the raw implementation source.
 
 ## Project Structure
 
 ```text
 Finextract/
 |-- FinExtract Pro Setup 1.0.0.exe
+|-- .gitattributes
+|-- .gitignore
 `-- README.md
 ```
 
@@ -18,12 +20,12 @@ Finextract/
 
 1. Download or clone this repository.
 2. Run `FinExtract Pro Setup 1.0.0.exe`.
-3. Follow the Windows installation steps.
-
-## Running The Project
-
-Launch the installed application from the Start menu or shortcut created by the installer.
+3. Follow the installer steps.
 
 ## How It Works
 
-The repository stores the packaged installer artifact. Application logic is contained inside the installed desktop program rather than source files in this repository.
+The repository is intentionally simple: it serves as a delivery point for the packaged installer. The application logic lives inside the installed desktop app, not as source files in this repo.
+
+## When This Repo Is Useful
+
+This is the right format when you want to hand off an installable product quickly to users, testers, or stakeholders without asking them to build anything locally.
